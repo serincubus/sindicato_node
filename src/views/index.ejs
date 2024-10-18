@@ -5,7 +5,20 @@
     <main class="contenedor__main">
    
       <h1><%= title %></h1>
-        <p>Welcome to <%= title %></p>
+        <p>compañeros de San Miguel, Jose C. Paz y Malvinas Argentinas<%= title %></p>
+
+        <% const articulos = [
+        { img: 'ruta/a/la/imagen1.jpg', descripcion: 'Descripción del artículo 1' },
+        { img: 'ruta/a/la/imagen2.jpg', descripcion: 'Descripción del artículo 2' },
+        { img: 'ruta/a/la/imagen3.jpg', descripcion: 'Descripción del artículo 3' }
+    ]; %>
+
+    <% articulos.forEach(function(articulo) { %>
+        <div class="contenedor__articulo">
+            <img src="<%= articulo.img %>" alt="<%= articulo.descripcion %>">
+            <p><%= articulo.descripcion %></p>
+        </div>
+    <% }) %>
     </main>
   </body>
 </html>
