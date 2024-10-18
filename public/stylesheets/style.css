@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
 *{
   border: none;
   margin: 0;
@@ -9,6 +11,7 @@
 header{
 width: 100%;
 height: auto;  
+
 }
 
 .imagen__sindicato__header{
@@ -22,21 +25,35 @@ height: auto;
   height: 20px;
   background-color: #85c2f4;
   display: none;
+  
  
 }
 
-.contenedor__header__nav.active{
+.contenedor__header__nav.active {
   display: block;
+  width: 150px;
+  margin-bottom: 120px;
+  
 }
 
 
+
+.contenedor__header__nav.active ul{
+  background-color: #85c2f4; 
+  border: 1px solid black;
+  text-align: center;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
 
 .contenedor__header ul{
   list-style-type: none;
   display: flex;
   align-items: center;
   gap: 20px;
-
 }
 
 .div__btn{
@@ -51,5 +68,4 @@ height: auto;
   background: none;
   border: none;
   cursor: pointer;
-
 }
