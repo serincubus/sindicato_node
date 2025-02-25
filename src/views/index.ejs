@@ -4,21 +4,27 @@
 
     <main class="contenedor__main">
    
-      <h1><%= title %></h1>
-        <p>compañeros de San Miguel, Jose C. Paz y Malvinas Argentinas<%= title %></p>
+      <h1 class="h1__principal"><%= title %></h1>
+        
 
-        <% const articulos = [
-        { img: 'ruta/a/la/imagen1.jpg', descripcion: 'Descripción del artículo 1' },
-        { img: 'ruta/a/la/imagen2.jpg', descripcion: 'Descripción del artículo 2' },
-        { img: 'ruta/a/la/imagen3.jpg', descripcion: 'Descripción del artículo 3' }
-    ]; %>
+       
 
-    <% articulos.forEach(function(articulo) { %>
-        <div class="contenedor__articulo">
-            <img src="<%= articulo.img %>" alt="<%= articulo.descripcion %>">
-            <p><%= articulo.descripcion %></p>
+        <% noticias.forEach(noticia=>{%>
+          
+          <div class="contenedor__articulo">
+            <a href="detalleNoticia/<%= noticia.id%>">
+            <div class="contenedor__localidad">
+              <p class="p__localidad" ><%= noticia.localidad %></p>
+            </div>
+            <p class="p__fecha"><%= noticia.fechaFormateada %></p>
+            <img class="imagen__noticia" src="/public/images/<%= noticia.imagen %>" alt="">
+            <h1 class="h1__titulo"><%= noticia.titulo %></h1>
+            <h3 class="h3__epigrafe"><%= noticia.epigrafe %>  leer mas</h3>
+          </a>   
         </div>
-    <% }) %>
+      
+        <%})%>
     </main>
+    <%- include('./partials/footer.ejs')%>
   </body>
 </html>

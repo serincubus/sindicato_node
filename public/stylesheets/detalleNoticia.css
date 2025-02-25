@@ -1,0 +1,192 @@
+.contenedor__detalle {
+    width: 320px;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los elementos hijos */
+    flex-direction: column;
+    align-items: center; /* Centra verticalmente los elementos hijos */
+    text-align: center; /* Centra el texto dentro del contenedor */
+    overflow: hidden;
+}
+.detalle__imagen__noticia{
+    width: 96%;
+    
+    margin: 2%;
+}
+
+.detalle__contenedor__localidad{
+  width: 60%;
+  height: 26px;
+  background-color: #85c2f4;
+  display: flex;
+  justify-content: flex-start;
+  border-top-left-radius: 10px; /* Redondea la esquina superior izquierda */ 
+  border-bottom-right-radius: 10px;
+  margin-top:10px;
+  margin-right: auto;
+  margin-left: 5px;
+}
+
+.detalle__p__localidad{
+    padding-left: 20px;
+    padding-top: 5px;
+    font-family: "Roboto";
+    font-size: 14px;
+    height: 14px;
+    font-weight: 600;
+    color:#ffffff
+    
+  }
+
+.detalle__p__fecha{
+    font-family: "Saira";
+    font-size: 12px;
+    font: height 18px;
+    font-weight: 400;
+    color: #000;
+    text-align: end;
+    margin-left: auto;
+
+}
+
+.detalle__p__texto__informativo{
+    width: 96%;
+    height: auto;
+    text-align: center;
+    overflow-wrap: break-word;
+    
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .contenedor__detalle {
+        width: 100%;
+        display: flex;
+        justify-content: center; /* Centra horizontalmente los elementos hijos */
+        flex-direction: column;
+        align-items: center; /* Centra verticalmente los elementos hijos */
+        text-align: center; /* Centra el texto dentro del contenedor */
+        overflow: hidden;
+    }
+
+    .detalle__contenedor__localidad{
+        width: 35%;
+        height: 26px;
+        background-color: #85c2f4;
+        display: flex;
+        justify-content: flex-start;
+        border-top-left-radius: 10px; /* Redondea la esquina superior izquierda */ 
+        border-bottom-right-radius: 10px;
+        margin-top:10px;
+        margin-right: auto;
+        margin-left: 5px;
+      }
+
+    .contenedor__localidad p{
+        font-family: "Roboto";
+        font-size: 14px;
+        font-weight: 600;
+    }
+    
+    .p__fecha{
+        width: 96%;
+        margin-right: 10px;
+        
+    
+    }
+
+    .detalle__h1__titulo{
+        font-size: 28px;
+        font-family: "Titillium Web", serif;
+
+    }
+
+    .detalle__h3__epigrafe{
+        font-size: 18px;
+        font-family: "Saira";
+    }
+    
+
+    .detalle__imagen__noticia{
+        width: 60%;
+        height: 450px;
+        font-weight: 400;
+            }   
+
+    
+    .detalle__p__texto__informativo{
+        width: 96%;
+        height: auto;
+        text-align: center;
+        overflow-wrap: break-word;
+        font-family: "Saira";
+        font-size: 18px;
+        
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .contenedor__detalle {
+        width: 100%;
+        display: flex;
+        justify-content: center; /* Centra horizontalmente los elementos hijos */
+        flex-direction: column;
+        align-items: center; /* Centra verticalmente los elementos hijos */
+        text-align: center; /* Centra el texto dentro del contenedor */
+        overflow: hidden;
+    }
+
+    .detalle__contenedor__localidad{
+        width: 35%;
+        height: 26px;
+        background-color: #85c2f4;
+        display: flex;
+        justify-content: flex-start;
+        border-top-left-radius: 10px; /* Redondea la esquina superior izquierda */ 
+        border-bottom-right-radius: 10px;
+        margin-top:10px;
+        margin-right: auto;
+        margin-left: 5px;
+      }
+
+    .contenedor__localidad p{
+        font-family: "Roboto";
+        font-size: 14px;
+        font-weight: 600;
+    }
+    
+    .p__fecha{
+        width: 96%;
+        margin-right: 10px;
+        
+    
+    }
+
+    .detalle__h1__titulo{
+        font-size: 28px;
+        font-family: "Titillium Web", serif;
+
+    }
+
+    .detalle__h3__epigrafe{
+        font-size: 18px;
+        font-family: "Saira";
+    }
+    
+
+    .detalle__imagen__noticia{
+        width: 60%;
+        height: 450px;
+        font-weight: 400;
+            }   
+
+    
+    .detalle__p__texto__informativo{
+        width: 96%;
+        height: auto;
+        text-align: center;
+        overflow-wrap: break-word;
+        font-family: "Saira";
+        font-size: 18px;
+        
+    }
+
+}

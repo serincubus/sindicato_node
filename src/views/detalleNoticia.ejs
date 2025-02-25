@@ -1,0 +1,19 @@
+<%- include('./partials/head.ejs')%>
+  <body>
+ <%- include('./partials/header') %>
+ <main>
+  <div class="contenedor__detalle">
+      <div class="detalle__contenedor__localidad">
+        <p class="detalle__p__localidad" ><%= noticia.localidad %></p>
+      </div>
+      <p class="detalle__p__fecha"><%= noticia.fechaFormateada %></p>    
+      <h1 class="detalle__h1__titulo"><%= noticia.titulo%></h1>
+      <h3 class="detalle__h3__epigrafe"><%= noticia.epigrafe%></h3>
+      <img class="detalle__imagen__noticia" src="/public/images/<%= noticia.imagen %>"  alt="">
+      <p class="detalle__p__texto__informativo"><%= noticia.textoInformativo %></p>
+</div>
+ </main>
+
+    
+</body>
+</html>

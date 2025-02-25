@@ -26,11 +26,11 @@ module.exports = (sequelize) => {
             type: DataTypes.TEXT,
             allowNull: true
         },
-        partido: {
+        localidad: {
             type: DataTypes.TEXT,
             allowNull: true
         },
-        texto_informativo: {
+        textoInformativo: {
             type: DataTypes.TEXT,
             allowNull: false
         }
