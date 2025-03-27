@@ -5,4 +5,11 @@ document.addEventListener("DOMContentLoaded", () => {
     hamburguerBtn.addEventListener("click", () => {
       navMenu.classList.toggle("active");
     });
+
+    const inicioButton = document.getElementById("volverInicio");
+    if (inicioButton) {
+        inicioButton.addEventListener("click", () => {
+            window.location.href = '/';
+        });
+    }
   });

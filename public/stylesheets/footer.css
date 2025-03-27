@@ -1,0 +1,141 @@
+
+
+.contenido__footer{
+    background-color: #000000;
+    width: 100%;
+    height: auto;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+.escudo__sindicato__footer{
+width: 30%;
+height: auto;
+}
+
+.posicionamiento__contenido__footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.footer__nombre__sindicato{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    color: #85c2f4;
+    text-align: center;
+}
+.footer__datos{
+    margin-top: 3%;
+    color: #fff;
+    font-size: 1em;
+}
+
+.footer__telicono__h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.footer__icono__telefono{
+  width: 5%;
+  height: 5%;
+  }
+
+.footer__telicono__h4 h4{
+    align-items: center;
+    color: #fff;
+    font-size: 1em;
+    margin-left: 1%;
+}
+
+.footer__enlace__facebook{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.logo__facebook__footer{
+    width: 5%;
+    height: 5%;
+}
+
+.footer__enlace__facebook h4 a{
+    align-items: center;
+}
+
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .contenido__footer{
+        background-color: #000000;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between; /* Distribuye los elementos a los lados */
+        align-items: center; /* Centra los elementos verticalmente */
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        }    
+
+    .escudo__sindicato__footer{
+        width: 25%;
+        height: auto;       
+    }
+
+    .posicionamiento__contenido__footer{
+        display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+    justify-content: center;
+    width: 65%;
+    }
+
+    .footer__telicono__h4{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 3%;
+    }
+
+    .footer__enlace__facebook{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 3%;
+    }
+
+    .footer__nombre__sindicato{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2.5em;
+        color: #85c2f4;
+        text-align: center;
+    }
+    .footer__datos{
+        margin-top: 3%;
+        color: #fff;
+        font-size: 1.5em;
+    }
+
+    .footer__telicono__h4 h4{
+        align-items: center;
+        color: #fff;
+        font-size: 1.5em;
+        margin-left: 1%;
+    }
+
+    .footer__enlace__facebook h4 a{
+        align-items: center;
+        color: #fff;
+        font-size: 1.5em;
+        margin-left: 1%;
+    }
+
+
+}

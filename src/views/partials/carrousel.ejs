@@ -1,0 +1,47 @@
+ 
+<!-- <div class="page">  -->
+  <!-- Slider -->
+  <div class="simple-slider page-slider">
+    <div class="slider-wrapper">
+      <!-- Primer slide -->
+      <div class="slider-slide" style="background-image:url('/public/images/cosquin.jpeg');">        
+        <span class="slider-number"></span>
+      </div>
+
+      <!-- Second slide -->
+      <div class="slider-slide" style="background-image:url('/public/images/predio_pileta_2.jpeg');">
+        <span class="slider-number"></span>
+      </div>
+
+      <!-- Third slide -->
+      <div class="slider-slide" style="background-image:url('/public/images/tercera_edad_festejo.jpeg');">
+        <span class="slider-number"></span>
+      </div>
+
+      <!-- Fourth slide -->
+      <div class="slider-slide is-bright" style="background-image:url('/public/images/movilizacion_sindicato_15092024.jpeg');">
+        <span class="slider-number"></span>
+      </div>
+    </div>
+
+    <!--Pagination (Not required)-->
+    <div class="slider-pagination"></div>
+
+    <!-- Buttons (Not required) -->
+    <div class="slider-btn slider-btn-prev"></div>
+    <div class="slider-btn slider-btn-next"></div> 
+  </div>
+  <!-- /Slider -->
+<!-- </div>  -->
+
+<script src="/public/javascripts/simpleSlider.min.js"></script>
+<script>
+  var slider = new SimpleSlider('.page-slider',{
+    //Transicion entre diapositivas en ms
+    speed:600,
+    //Retardo de la transici�n entre diapositivas en ms
+    delay:5000,
+    autoplay:true,
+    loop:true
+    });
+</script>

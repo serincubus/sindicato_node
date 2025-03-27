@@ -1,7 +1,7 @@
 <%- include('./partials/head.ejs')%>
   <body>
  <%- include('./partials/header') %>
- <main>
+ <main class="contenedor__detalle__main">
   <div class="contenedor__detalle">
       <div class="detalle__contenedor__localidad">
         <p class="detalle__p__localidad" ><%= noticia.localidad %></p>
@@ -13,7 +13,7 @@
       <p class="detalle__p__texto__informativo"><%= noticia.textoInformativo %></p>
 </div>
  </main>
-
+ <%- include('./partials/footer.ejs')%>
     
 </body>
 </html>
