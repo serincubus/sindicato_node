@@ -1,0 +1,42 @@
+<%- include('./partials/head.ejs')%>
+  <body>
+ <%- include('./partials/header') %>
+ <main>
+  <h1 class="h1_creacion_noticia"><%= title %></h1>
+  <h1>ID de la noticia  <%=noticia.id%></h1>
+  <form action="/editarNoticia/<%=noticia.id%>" method="post" enctype="multipart/form-data"> 
+    <div> 
+        <label for="fecha">Fecha:</label> 
+        <input type="date" id="fecha" name="fecha" required value="<%= noticia.fecha%>"> 
+      </div> 
+    <div> 
+        <label for="titulo">Título:</label> 
+        <input type="text" id="titulo" name="titulo" required value="<%= noticia.titulo%>"> 
+    </div> 
+    <div> 
+        <label for="breveResumen">Breve Resumen:</label> 
+        <input type="text" id="epigrafe" name="epigrafe" required value="<%= noticia.epigrafe%>">
+    </div> 
+    <div> 
+         
+    </div> <label for="textoInformativo">Texto Informativo:</label>
+        <textarea id="textoInformativo" name="textoInformativo" rows="5" required ><%= noticia.textoInformativo%></textarea>
+    <div> 
+        <label for="localidad">Localidad:</label> 
+        <input type="text" id="localidad" name="localidad" required value="<%= noticia.localidad%>"> 
+    </div> 
+    <div> 
+        <label for="imagen">Imagen:</label> 
+        <img src="/public/images/<%= noticia.imagen %>" alt="Imagen actual" style="max-width: 200px; display: block; margin-bottom: 10px;">
+        <input type="file" id="imagen" name="imagen" accept="image/*" required value="<%= noticia.imagen%>"> 
+    </div> 
+    <div> 
+        <button type="submit">Editar Noticia</button>
+    </div>
+    
+ </main>   
+ <form action="/eliminarNoticia/<%=noticia.id%>?_method=DELETE" method="POST">
+    <button type="submit">Eliminar Noticia</button>
+  </form>
+</body>
+

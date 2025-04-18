@@ -40,4 +40,7 @@ Object.keys(db).forEach(modelName => {
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
+// Agrega esto antes del module.exports
+console.log('Modelos registrados:', Object.keys(db));
+// Deberías ver "Secretarias" en la lista
 module.exports = db;

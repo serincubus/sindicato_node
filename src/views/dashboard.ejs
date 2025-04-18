@@ -1,0 +1,44 @@
+
+<%- include('./partials/head.ejs')%>
+<table class="table table-striped table-bordered">
+    <thead class="thead-dark">
+        <tr>
+            <th>ID</th>
+            <th>FECHA</th>
+            <th>TITULO</th>
+            <th>IMAGEN</th>
+            <th>LOCALIDAD</th>
+            <th>ACCIONES</th>
+        </tr>
+        <tbody>
+            <tr>
+                <% noticias.forEach(noticia => { %>
+                <td><%= noticia.id%></td>
+                <td><%=noticia.fecha%></td>
+                <td><%=noticia.titulo%></td>
+                <td><%=noticia.imagen%></td>
+                <td><%=noticia.localidad%></td>
+                <td>
+                    <a href="/editarNoticia" bi bi-pencil></a>
+                    <a href="/eliminarNoticia" bi bi-trash></a>
+                </td>
+                <% }) %>        
+            </tr>
+        </tbody>
+        
+
+    </thead>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>

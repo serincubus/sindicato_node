@@ -1,15 +1,28 @@
 <header>
-    <img id="volverInicio" class="imagen__sindicato__header" src="/images/nuevo_bandera_sindicato.jpg">
+    <div id="volverInicio" class="div_escudos_h3" >
+        <img class="escudo_sindicato_header" src="/public/images/Escudo Sindicato.svg" alt="escudo_sindicato">
+        <h3 class="h3_titulo_header">Sindicato de Trabajadores Municipales de San Miguel, Jose C Paz y Malvinas Argentinas</h3>
+       <a href="www.fesimubo.com.ar" class="escudo_fesimubo_header"><img  src="/public/images/Escudo Fesimubo.svg" alt=""></a> 
+    </div>   
+    <div class="div__btn__hamburguer__form">
     <div class="div__btn">
         <button class="hamburguer" id="hamburguer-btn">&#9776;</button>
     </div>
+        <form action="search"  class="form_search hidden">
+            <input type="type="text" id_="search" placeholder="Buscar..." class="input_search" name="search">
+            <button type="submit" class="btn_search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+        <i class="fa-solid fa-magnifying-glass icon_search"></i>
+    </div> 
     <nav class="contenedor__header__nav" id="nav-menu">
-        <ul>  
-           <li><a href="#link1">secretaria de juventud</a></li>  
-            <li><a href="#link2">secretaria de tercera edad</a></li>  
-            <li><a href="#link3">secretaria de la mujer</a></li>  
-            <li><a href="#link4">secretaria gremial</a></li>  
+        <ul> 
+         <% secretarias.forEach(secretaria=>{ %>  
+           <li><a href="/<%= secretaria.id_secretaria %>"><%=secretaria.nombre_secretaria%></a></li>  
+          <%})%> 
         </ul>  
     </nav>
     
-    </header>
+    
+    </header> 

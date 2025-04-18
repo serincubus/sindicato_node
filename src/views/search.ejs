@@ -2,10 +2,10 @@
   <body>
       
       <%- include('./partials/header')%>
-      <%- include('./partials/carrousel.ejs') %>
+     
       
 
-    <main class="contenedor__main">
+    <main class="search__contenedor__main">
    
       <h1 class="h1__principal"><%= title %></h1>
         
@@ -14,9 +14,9 @@
 
         <% noticias.forEach(noticia=>{%>
           
-          <div class="contenedor__articulo">
+          <div class="search__contenedor__articulo">
             <a href="detalleNoticia/<%= noticia.id%>">
-              <div class="contenedor__localidad">
+              <div class="search__contenedor__localidad">
                 <p class="p__localidad" ><%= noticia.localidad %></p>
               </div>
               <p class="p__fecha"><%= noticia.fechaFormateada %></p>
