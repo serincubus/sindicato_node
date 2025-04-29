@@ -51,7 +51,7 @@
     font-weight: 400;
     color: #000;
     text-align: end;
-    margin-left: auto;
+    /*margin-left: auto;*/
 
 }
 
@@ -165,7 +165,7 @@
     
     .detalle__p__fecha{
         width: 96%;
-        margin-right: 10px;
+        margin-left: -3%;
         font-family: "Saira";
         font-size: 1.5em;
         font-weight: 400;
@@ -199,6 +199,7 @@
         font-family: "Saira";
         font-size: 1.5em;
         text-align: justify;
+        margin-bottom: 5%;
     }
 
 }
