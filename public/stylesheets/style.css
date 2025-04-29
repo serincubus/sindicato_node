@@ -93,6 +93,8 @@ height: auto;
 
 .div__btn__hamburguer__form{
   display:flex;
+  width: 100%;
+  height: 10%;
   justify-content:space-between;
   background-color: #85c2f4;
 }
