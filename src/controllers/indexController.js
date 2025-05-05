@@ -210,7 +210,7 @@ eliminarNoticia: async (req,res)=>{
       return res.status(404).json({message: "noticia no encontrada"});
     }
     await ArticulosInformativos.destroy({
-      where: {id: noticia.id}
+      where: {id}
     })
   
     return res.status(200).json({message: "noticia eliminada"})
