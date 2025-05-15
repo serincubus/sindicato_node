@@ -248,7 +248,8 @@ search: async (req,res) => {
       }
     })
     if (!noticias || noticias.length === 0) {
-      return res.status(404).json({ message: "noticia no encontrada" });
+      
+      res.render('search', {title:"No se encontraron resultados", noticias: [], secretarias})
     }
     res.render('search', {title:"Resultados de la busqueda", noticias, secretarias})
     
