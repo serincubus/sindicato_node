@@ -30,6 +30,13 @@ router.get('/dashboard', indexController.dashboard);
 //buscador
 router.get('/search', indexController.search);
 
+//servicios
+router.get('/servicios', indexController.servicios);
+
+//especialistas
+router.get('/consultorios', indexController.especialistas);
+
+
 
 
 

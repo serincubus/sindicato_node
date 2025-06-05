@@ -1,0 +1,24 @@
+    <%- include('./partials/head.ejs')%>
+<body>
+    
+    <%- include('./partials/header')%>
+
+
+    <main class="contenedor__padre__servicios">
+        <h3>COMERCIOS ADHERIDOS PARA COMPRAS POR DESCUENTO DE HABERES</h3>
+        <p>en esta seccion encontraras los servicios adheridos a nuestro sindicato</p>
+        <% servicios.forEach(servicio=>{%>
+        <div class="contenedor__servicio">
+            <h4><%= servicio.nombreServicio %></h4>
+            <img src="/images/servicios/<%= servicio.imagenServicio %>" alt="<%= servicio.nombreServicio %>">
+            <p><%= servicio.direccionServicio %></p>
+        </div>
+        <%})%>
+        
+    </main>
+    <%- include('./partials/footer')%>
+</body>
+</html>
+
+
+

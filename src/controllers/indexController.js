@@ -258,6 +258,40 @@ search: async (req,res) => {
     console.error('error al obtener la noticia:', error.message);
     return res.status(500).json({message:"error al obtener la noticia"})
   }
+},
+
+servicios : async (req,res) => {
+  try {
+    const secretarias = await db.Secretarias.findAll();
+    const servicios = await db.Servicios.findAll();
+    console.log(servicios);
+    
+    if (!secretarias) {
+      return res.status(404).json({message: "secretaria no encontrada"});
+    }
+    res.render('servicios', {servicios,secretarias })
+    
+  } catch (error) {
+    console.error('error al obtener la secretaria:', error.message);
+    return res.status(500).json({message:"error al obtener la secretaria"})
+  }
+},
+
+especialistas : async (req,res) => {
+  try {
+    const secretarias = await db.Secretarias.findAll();
+    const consultorios = await db.Consultorios.findAll();
+    console.log(consultorios);
+    
+    if (!secretarias) {
+      return res.status(404).json({message: "secretaria no encontrada"});
+    }
+    res.render('consultorios', {consultorios,secretarias })
+    
+  } catch (error) {
+    console.error('error al obtener la secretaria:', error.message);
+    return res.status(500).json({message:"error al obtener la secretaria"})
+  }
 }
 
 }

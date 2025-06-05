@@ -1,0 +1,114 @@
+.contenedor__padre__consultorios{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 1%;
+}
+
+.contenedor__padre__consultorios h3{
+    width: 90%;
+    text-align: center;
+    font-size: 1.5em;
+    color: #000;
+    margin-bottom: 1%;
+}
+
+.contenedor__padre__consultorios p{
+    width: 90%;
+    text-align: justify;
+    font-size: 1.2em;
+    color: #000;
+    margin-bottom: 1%;
+}
+
+.contenedor__consultorio{
+    width: 90%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1%;
+    padding: 1%;
+    border-radius: 10px;
+    background-color: #85c2f4;
+}
+
+.contenedor__consultorio h4{
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    color: #000;
+    margin-bottom: 1%;
+}
+
+.contenedor__consultorio p{
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+    color: #000;
+    margin-bottom: 1%;
+}   
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+
+.contenedor__padre__consultorios{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 1%;
+}
+
+.contenedor__padre__consultorios h3{
+    width: 90%;
+    text-align: center;
+    font-size: 1.5em;
+    color: #000;
+    margin-bottom: 1%;
+}
+
+.contenedor__padre__consultorios p{
+    width: 90%;
+    text-align: center;
+    font-size: 1.2em;
+    color: #000;
+    margin-bottom: 1%;
+}
+
+.contenedor__consultorio{
+    width: 90%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1%;
+    padding: 1%;
+    border-radius: 10px;
+    background-color: #85c2f4;
+}
+
+.contenedor__consultorio h4{
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    color: #000;
+    margin-bottom: 1%;
+}
+
+.contenedor__consultorio p{
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+    color: #000;
+    margin-bottom: 1%;
+}   
+}

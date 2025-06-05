@@ -1,0 +1,27 @@
+<%- include('./partials/head.ejs')%>
+<body>
+    
+    <%- include('./partials/header')%>
+
+
+    <main class="contenedor__padre__consultorios">
+        <h3>CONSULTORIOS EXTERNOS "TOMAS QUINTEROS"</h3>
+        <p>PRESIDENTE PERON 2207, SAN MIGUEL </p>
+        <p>Los turnos se solicitan al tel. directo 4451- 2141 o por whatsapp <i class="fa-brands fa-whatsapp"></i>11-6166-0417</p>
+        <% consultorios.forEach(consultorio=>{%>
+        <div class="contenedor__consultorio">
+            <h4><%= consultorio.especialidad %></h4>
+            <h3><%= consultorio.nombreEspecialista %></h3>
+            <p><%= consultorio.direccion %></p>
+            <p><%= consultorio.diaHorario %></p>
+            <p><%= consultorio.observacion %></p>
+        </div>
+        <%})%>
+        
+    </main>
+    <%- include('./partials/footer')%>
+</body>
+</html>
+
+
+

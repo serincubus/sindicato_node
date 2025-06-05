@@ -1,0 +1,106 @@
+.contenedor__padre__servicios{
+    width: 100%;
+    height: auto;
+    /*background-color: #85c2f4;*/
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /*justify-content: space-around;*/
+    /*flex-wrap: wrap;*/
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 1%;
+}
+.contenedor__padre__servicios h3{
+    width: 100%;
+    text-align:center;
+    font-size: 1.25em;
+    margin-bottom: 1%;
+}
+
+
+
+.contenedor__servicio{
+    width: 100%;
+    height: auto;
+    background-color: #85c2f4;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 1%;
+    border-radius: 10px; 
+}
+
+.contenedor__servicio h4{
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+    padding: 1%;
+    margin-bottom: 1%;
+}
+
+.contenedor__servicio p{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 1%;
+}
+
+.contenedor__servicio img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1%;
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .contenedor__padre__servicios{
+        width: 100%;
+        height: auto;
+        /*background-color: #85c2f4;*/
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        /*justify-content: space-around;*/
+        /*flex-wrap: wrap;*/
+        margin-top: 1%;
+        margin-bottom: 1%;
+        padding: 1%;
+    }
+    .contenedor__padre__servicios h3{
+        width: 100%;
+        text-align:center;
+        font-size: 2.25em;
+        margin-bottom: 1%;
+    }
+
+    .contenedor__padre__servicios p{
+    width: 100%;
+    text-align:center;
+    font-size: 1.25em;
+    margin-bottom: 1%;
+}
+
+.contenedor__servicio{
+    width: 70%;
+    height: auto;
+    background-color: #85c2f4;
+    
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 1%;
+    border-radius: 10px; 
+}
+
+.contenedor__servicio img{
+    width: 70%;
+    height: 40%;
+    border-radius: 10px;
+    margin-bottom: 1%;
+}
+
+
+}
