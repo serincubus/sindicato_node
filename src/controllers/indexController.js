@@ -37,7 +37,7 @@ try {
   });
   const noticias = await db.ArticulosInformativos.findAll({
     order: [['fecha', 'DESC']],
-    limit: 4
+    limit: 19,
 })
 
   // 2. Debug detallado
