@@ -17,6 +17,15 @@
     margin-bottom: 1%;
 }
 
+.foto_principal_consultorio{
+    width: 95%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+
 .contenedor__padre__consultorios p{
     width: 90%;
     text-align: justify;
@@ -75,6 +84,15 @@
     margin-bottom: 1%;
 }
 
+.foto_principal_consultorio{
+    width: 70%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+
 .contenedor__padre__consultorios p{
     width: 90%;
     text-align: center;
@@ -84,7 +102,7 @@
 }
 
 .contenedor__consultorio{
-    width: 90%;
+    width: 70%;
     height: 10%;
     display: flex;
     flex-direction: column;
