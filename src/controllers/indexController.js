@@ -53,7 +53,7 @@ try {
 
   // 3. Render con protección de variables
   return res.render('index', {
-    title: "'Sitio oficial del Sindicato de Trabajadores Municipales de San Miguel, Jose C Paz y Malvinas Argentinas'",
+    title: "Sitio oficial del Sindicato de Trabajadores Municipales de San Miguel, Jose C Paz y Malvinas Argentinas",
     secretarias: secretarias, // Asegúrate que coincida con el nombre en la vista
     _debug: {
       timestamp: Date.now(),
