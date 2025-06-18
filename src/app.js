@@ -25,34 +25,6 @@ const methodOverride = require('method-override');
 app.use(methodOverride('_method'));
 
 const db = require('./database/models');
-/*
-async function initialize() {
-  try {
-    await db.sequelize.authenticate();
-    console.log('✓ Conexión a DB establecida');
-    
-    // Sincronización segura (solo en desarrollo)
-    if (process.env.NODE_ENV === 'development') {
-      await db.sequelize.sync({ alter: true });
-      console.log('✓ Modelos sincronizados');
-      
-      // Verificación de datos
-      const secretarias = await db.Secretarias.findAll();
-      console.log(`✓ ${secretarias.length} registros en Secretarias`);
-    }
-    
-    // Inicia el servidor
-    const PORT = process.env.PORT || 3000;
-    app.listen(PORT, () => {
-      console.log(`✓ Servidor en puerto ${PORT}`);
-    });
-  } catch (error) {
-    console.error('✗ Error de inicialización:', error);
-    process.exit(1);
-  }
-}
-
-initialize();*/
 
 app.use('/', indexRouter);
 app.use('/', secretariaRouter)
